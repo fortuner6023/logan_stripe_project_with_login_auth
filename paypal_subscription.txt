@@ -1,0 +1,101 @@
+{
+    "id": "P-6L109828AY406445CMGKK7GA",
+    "product_id": "PROD-0S60533526838345K",
+    "name": "Monthly Plan",
+    "status": "ACTIVE",
+    "description": "Monthly plan",
+    "usage_type": "LICENSED",
+    "create_time": "2021-11-17T07:30:32Z",
+    "links": [
+        {
+            "href": "https://api.sandbox.paypal.com/v1/billing/plans/P-6L109828AY406445CMGKK7GA",
+            "rel": "self",
+            "method": "GET",
+            "encType": "application/json"
+        },
+        {
+            "href": "https://api.sandbox.paypal.com/v1/billing/plans/P-6L109828AY406445CMGKK7GA",
+            "rel": "edit",
+            "method": "PATCH",
+            "encType": "application/json"
+        },
+        {
+            "href": "https://api.sandbox.paypal.com/v1/billing/plans/P-6L109828AY406445CMGKK7GA/deactivate",
+            "rel": "self",
+            "method": "POST",
+            "encType": "application/json"
+        }
+    ]
+}
+/////////////////////////////////////////////////////////////////////
+
+
+<div id="paypal-button-container-P-0AC305594G341200YMGKNNXY"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AcBrrAlx2mlJCrY-g96xXRb7lVaGRcgRNRHqxpZ9o7mbqfwt_u-XVlIZ-jU7M_gIYXFn9KLOk-F1iPvm&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-0AC305594G341200YMGKNNXY'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-0AC305594G341200YMGKNNXY'); // Renders the PayPal button
+</script>
+
+
+//////////////////////////////////////////////////////////////
+<div id="paypal-button-container-P-1L509011K73710739MGKM53A"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AcBrrAlx2mlJCrY-g96xXRb7lVaGRcgRNRHqxpZ9o7mbqfwt_u-XVlIZ-jU7M_gIYXFn9KLOk-F1iPvm&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-1L509011K73710739MGKM53A'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-1L509011K73710739MGKM53A'); // Renders the PayPal button
+</script>
+
+///////////////////////////////////////////////////////////////////////////
+
+<div id="paypal-button-container-P-8BD96486RW733345FMGKM6MQ"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AcBrrAlx2mlJCrY-g96xXRb7lVaGRcgRNRHqxpZ9o7mbqfwt_u-XVlIZ-jU7M_gIYXFn9KLOk-F1iPvm&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-8BD96486RW733345FMGKM6MQ'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-8BD96486RW733345FMGKM6MQ'); // Renders the PayPal button
+</script>

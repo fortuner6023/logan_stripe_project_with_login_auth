@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Pricing — IdealSignals Interface</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/fav/favicon.png">
+    <link rel="icon" type="image/png" href="assets/img/fav/favicon.png">
+    <meta name="msapplication-TileColor" content="#313590">
+    <meta name="theme-color" content="#313590">
+    <!-- Dependency Styles -->
+    <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/magnific-popup/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css">
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <script src="https://script.tapfiliate.com/tapfiliate.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+        (function (t, a, p) {
+            t.TapfiliateObject = a;
+            t[a] = t[a] || function () {
+                (t[a].q = t[a].q || []).push(arguments)
+            }
+        })(window, 'tap');
+
+        tap('create', '25219-9939a4', {
+            integration: "javascript"
+        });
+        tap('detect');
+    </script>
+     <script src="https://js.stripe.com/v3/"></script>
+     <script src="./script.js" defer></script>
+</head>
+
+<body id="home-version-1" class="home-version-1" data-style="default">
+    <a href="#main_content" data-type="section-switch" class="return-to-top"> <i class="fa fa-chevron-up"></i> </a>
+    <div class="page-loader">
+        <div class="loader">
+            <!-- Loader -->
+            <div class="blobs">
+                <div class="blob-center"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="goo">
+                        <fegaussianblur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <febolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                        <feclend in="SourceGraphic" in2="goo" />
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+    </div>
+    <!-- /.page-loader -->
+    <div id="main_content">
+        <!--=========================-->
+        <!--=        Navbar         =-->
+        <!--=========================-->
+        <header class="site-header header-two header_trans-fixed" data-top="992">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="site-mobile-logo">
+                        <a href="index.html" class="logo"> <img src="assets/img/toplogo.png" alt="site logo"
+                                class="main-logo"></a>
+                    </div>
+                    <!-- /.site-mobile-logo -->
+                    <div class="toggle-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <!-- /.toggle-menu -->
+                    <nav class="site-nav nav-two">
+                        <div class="close-menu">
+                            <span>Close</span>
+                            <i class="ei ei-icon_close"></i>
+                        </div>
+                        <div class="site-logo">
+                            <a href="/index" class="logo"> <img src="assets/img/toplogo.png" alt="site logo"
+                                    class="main-logo"> <img src="assets/img/toplogoinverted.png" alt="site logo"
+                                    class="sticky-logo"> </a>
+                        </div>
+                        <div class="menu-wrapper" data-top="992">
+                            <ul class="site-main-menu">
+                                <li>
+                                    <a href="/features">Features</a>
+                                </li>
+                                <li>
+                                    <a href="/pricing">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="/faq">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="/catalog">Catalog</a>
+                                </li>
+                                <li>
+                                    <a href="/contact">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="nav-right">
+                                <a href="https://discord.gg/idealsignals" class="nav-btn">Free Trial</a>
+                            </div>
+                        </div>
+                        <!-- /.menu-wrapper -->
+                    </nav>
+                    <!-- /.site-nav -->
+                </div>
+                <!-- /.header-inner -->
+            </div>
+            <!-- /.container -->
+        </header>
+        <!-- /.site-header -->
+        <!--==========================-->
+        <!--=         Banner         =-->
+        <!--==========================-->
+        <section class="page-banner banner-two banner">
+            <div class="container">
+                <div class="page-title-wrapper">
+                    <h1 class="page-title" style="color:white;">Pricing</h1>
+                    <ul class="bradcurmed">
+                        <li style="color:white;">
+                            <a href="#" rel="noopener noreferrer" style="color:white;">Home</a>
+                        </li>
+                        <li style="color:white;">Pricing</li>
+                    </ul>
+                </div>
+                <!-- /.page-title-wrapper -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.page-banner -->
+        <!--==============================-->
+        <!--=         Pricin One         =-->
+        <!--==============================-->
+        <section class="pricing-two">
+            <div class="container">
+                <div class="section-title color-two text-center">
+                    <h3 class="sub-title wow pixFadeUp">Pricing Plan</h3>
+                    <h2 class="title wow pixFadeUp" data-wow-delay="0.3s">
+                        Choose The Plan For You!</h2>
+                </div>
+                <!-- /.section-title -->
+                <!-- <nav class="pricing-tab color-two wow pixFadeUp" data-wow-delay="0.4s">
+                    <span class="monthly_tab_title tab-btn">
+                        Monthly </span>
+                    <span class="pricing-tab-switcher"></span>
+                    <span class="annual_tab_title tab-btn">
+                        Annual </span>
+                </nav> -->
+                <div class="row advanced-pricing-table">
+                    <div class="col-lg-4">
+                        <div class="pricing-table style-two price-two wow pixFadeLeft color-two" data-wow-delay="0.5s">
+                            <div class="pricing-header pricing-amount">
+                                <div class="annual_price">
+                                    <h2 class="price">$1000 /year</h2>
+                                </div>
+                                <!-- /.annual_price -->
+                                <div class="monthly_price">
+                                    <h2 class="price">$100 /month</h2>
+                                </div>
+                                <!-- /.monthly_price -->
+                                <h3 class="price-title">Basic</h3>
+                            </div>
+                            <!-- /.pricing-header -->
+                            <ul class="price-feture">
+                                <li class="have">One-Click Copy Dashboard</li>
+                                <li class="have">Analysis Access</li>
+                                <li class="have">One-Sentence News</li>
+                                <li class="not">Crypto Capabilities</li>
+                                <li class="not">No multi-channel ability</li>
+                            </ul>
+                            <div class="action text-left">
+                                <button id="basic-monthly-plan-btn" class="pix-btn btn-outline-two">Sign Up</button>
+
+                                <!-- <a target="_blank" href="https://buy.stripe.com/14kaF0dEE6sX86ceUX"
+                                    class="pix-btn btn-outline-two">Sign Up</a> -->
+                            </div>
+                        </div>
+                        <!-- /.pricing-table -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <div class="pricing-table color-two style-two price-two featured wow pixFadeLeft"
+                            data-wow-delay="0.7s">
+                            <div class="trend">
+                                <p>Popular</p>
+                            </div>
+                            <div class="pricing-header pricing-amount">
+                                <div class="annual_price">
+                                    <h2 class="price">$2500 /year</h2>
+                                </div>
+                                <!-- /.annual_price -->
+                                <div class="monthly_price">
+                                    <h2 class="price">$250 /month</h2>
+                                </div>
+                                <!-- /.monthly_price -->
+                                <h3 class="price-title">Premium</h3>
+                            </div>
+                            <!-- /.pricing-header -->
+                            <ul class="price-feture">
+                                <li class="have">One-Click Copy Dashboard</li>
+                                <li class="have">Analysis Access</li>
+                                <li class="have">One-Sentence News</li>
+                                <li class="have">Crypto Capabilities</li>
+                                <li class="have">Up to 5 Channels at once</li>
+                            </ul>
+                            <div class="action text-left">
+                                <button id="premium-monthly-plan-btn" class="pix-btn btn-outline-two">Sign Up</button>
+                                <!-- <a target="_blank" href="https://buy.stripe.com/3csbJ4fMMaJd1HOdQU"
+                                    class="pix-btn btn-outline-two">Sign Up</a> -->
+                            </div>
+                        </div>
+                        <!-- /.pricing-table -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <div class="pricing-table color-two style-two price-two wow pixFadeLeft" data-wow-delay="0.9s">
+                            <div class="pricing-header pricing-amount">
+                                <div class="annual_price">
+                                    <h2 class="price">$5000 /year</h2>
+                                </div>
+                                <!-- /.annual_price -->
+                                <div class="monthly_price">
+                                    <h2 class="price">$500 /month</h2>
+                                </div>
+                                <!-- /.monthly_price -->
+                                <h3 class="price-title">Pro</h3>
+                            </div>
+                            <!-- /.pricing-header -->
+                            <ul class="price-feture">
+                                <li class="have">One-Click Copy Dashboard</li>
+                                <li class="have">Analysis Access</li>
+                                <li class="have">One-Sentence News</li>
+                                <li class="have">Crypto Capabilities</li>
+                                <li class="have">Up to 10 Channels at once</li>
+                            </ul>
+                            <div class="action text-left"></div>
+                            <button id="pro-monthly-plan-btn" class="pix-btn btn-outline-two">Sign Up</button>
+                            <!-- <a target="_blank" href="https://buy.stripe.com/bIYaF01VW3gL9agfZ3"
+                                class="pix-btn btn-outline-two">Sign Up</a> -->
+                        </div>
+                        <!-- /.pricing-table -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                </div>
+
+                <!-- 2nd plan list -->
+
+                <div class="row advanced-pricing-table">
+                    <div class="col-lg-4">
+                        <div class="pricing-table style-two price-two wow pixFadeLeft color-two" data-wow-delay="0.5s">
+                            <div class="pricing-header pricing-amount">
+                                <div class="annual_price">
+                                    <h2 class="price">$1000 /year</h2>
+                                </div>
+                                <!-- /.annual_price -->
+                                <div class="monthly_price">
+                                    <h2 class="price">$1000 /year</h2>
+
+                                </div>
+                                <!-- /.monthly_price -->
+                                <h3 class="price-title">Basic</h3>
+                            </div>
+                            <!-- /.pricing-header -->
+                            <ul class="price-feture">
+                                <li class="have">One-Click Copy Dashboard</li>
+                                <li class="have">Analysis Access</li>
+                                <li class="have">One-Sentence News</li>
+                                <li class="not">Crypto Capabilities</li>
+                                <li class="not">No multi-channel ability</li>
+                            </ul>
+                            <div class="action text-left">
+                                <button id="basic-yearly-plan-btn" class="pix-btn btn-outline-two">Sign Up</button>
+                                <!-- <a target="_blank" href="https://buy.stripe.com/14kaF0dEE6sX86ceUX"
+                                    class="pix-btn btn-outline-two">Sign Up</a> -->
+                            </div>
+                        </div>
+                        <!-- /.pricing-table -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <div class="pricing-table color-two style-two price-two featured wow pixFadeLeft"
+                            data-wow-delay="0.7s">
+                            <div class="trend">
+                                <p>Popular</p>
+                            </div>
+                            <div class="pricing-header pricing-amount">
+                                <div class="annual_price">
+                                    <h2 class="price">$2500 /year</h2>
+                                </div>
+                                <!-- /.annual_price -->
+                                <div class="monthly_price">
+                                    <h2 class="price">$2500 /year</h2>
+
+                                </div>
+                                <!-- /.monthly_price -->
+                                <h3 class="price-title">Premium</h3>
+                            </div>
+                            <!-- /.pricing-header -->
+                            <ul class="price-feture">
+                                <li class="have">One-Click Copy Dashboard</li>
+                                <li class="have">Analysis Access</li>
+                                <li class="have">One-Sentence News</li>
+                                <li class="have">Crypto Capabilities</li>
+                                <li class="have">Up to 5 Channels at once</li>
+                            </ul>
+                            <div class="action text-left">
+                                <button id="premium-yearly-plan-btn" class="pix-btn btn-outline-two">Sign Up</button>
+                                <!-- <a target="_blank" href="https://buy.stripe.com/3csbJ4fMMaJd1HOdQU"
+                                    class="pix-btn btn-outline-two">Sign Up</a> -->
+                            </div>
+                        </div>
+                        <!-- /.pricing-table -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <div class="pricing-table color-two style-two price-two wow pixFadeLeft" data-wow-delay="0.9s">
+                            <div class="pricing-header pricing-amount">
+                                <div class="annual_price">
+                                    <h2 class="price">$5000 /year</h2>
+                                </div>
+                                <!-- /.annual_price -->
+                                <div class="monthly_price">
+                                    <h2 class="price">$5000 /year</h2>
+
+                                </div>
+                                <!-- /.monthly_price -->
+                                <h3 class="price-title">Pro</h3>
+                            </div>
+                            <!-- /.pricing-header -->
+                            <ul class="price-feture">
+                                <li class="have">One-Click Copy Dashboard</li>
+                                <li class="have">Analysis Access</li>
+                                <li class="have">One-Sentence News</li>
+                                <li class="have">Crypto Capabilities</li>
+                                <li class="have">Up to 10 Channels at once</li>
+                            </ul>
+                            <div class="action text-left"></div>
+                            <button id="pro-yearly-plan-btn" class="pix-btn btn-outline-two">Sign Up</button>
+                            <!-- <a target="_blank" href="https://buy.stripe.com/bIYaF01VW3gL9agfZ3"
+                                class="pix-btn btn-outline-two">Sign Up</a> -->
+                        </div>
+                        <!-- /.pricing-table -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                </div>
+                <!-- /.advanced-pricing-table -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.pricing -->
+        <!--==================================-->
+        <!--=         Call to Action         =-->
+        <!--==================================-->
+        <section class="call-to-action action-padding">
+            <div class="overlay-bg">
+                <img src="media/background/ellipse.png" alt="bg">
+            </div>
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-7">
+                        <div class="action-content style-two wow pixFadeUp">
+                            <h2 class="title">Change your strategy today</h2>
+                        </div>
+                        <!-- /.action-content -->
+                    </div>
+                    <!-- /.col-lg-7 -->
+                    <div class="col-lg-5 text-right">
+                        <a href="#newsletter"
+                            class="pix-btn btn-light btn-big scroll-btn wow pixFadeUp color-two">Subscribe Now!</a>
+                    </div>
+                    <!-- /.col-lg-5 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.call-to-action -->
+        <!--==============================-->
+        <!--=         Pricin Two         =-->
+        <!--==============================-->
+        <!-- /.pricing -->
+        <!--=========================-->
+        <!--=        Footer         =-->
+        <!--=========================-->
+        <footer id="footer" class="footer-two">
+            <div class="container">
+                <div class="footer-inner wow pixFadeUp">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                        </div>
+                        <!-- /.col-lg-3 col-md-6 -->
+                        <!-- /.col-lg-3 col-md-6 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="widget footer-widget">
+                                <h3 class="widget-title">Links</h3>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="https://discord.gg/idealsignals">Discord Invite</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intercom.help/idealsignals/en/">Legal</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intercom.help/idealsignals/en/">Help Center</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.widget footer-widget -->
+                        </div>
+                        <!-- /.col-lg-3 col-md-6 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="widget footer-widget">
+                                <h3 class="widget-title">Our Address</h3>
+                                <p>651 N Broad St, Ste 205 #6368
+                                    Middletown, DE 19709</p>
+                                <ul class="footer-social-link">
+                                    <li>
+                                        <a href="https://twitter.com/idealsignals"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://instagram.com/idealsignals"><i
+                                                class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.widget footer-widget -->
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="widget footer-widget">
+                                <h3 class="widget-title">Disclaimer</h3>
+                                <p style="font-size:12px">IdealSignals LLC is not a broker-dealer or investment advisor,
+                                    we are a software-as-a-service (SaaS) technology provider. Securities and
+                                    investments are offered through the respective brokers.</p>
+                            </div>
+                            <!-- /.widget footer-widget -->
+                        </div>
+                        <!-- /.col-lg-3 col-md-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.footer-inner -->
+                <div class="site-info">
+                    <div class="copyright">
+                        <p>Copyright © 2021 IdealSignals. All Rights Reserved.</p>
+                    </div>
+                    <ul class="site-info-menu">
+                        <li>
+                            <a href="https://intercom.help/idealsignals/en/articles/5429889-privacy-policy">Privacy
+                                Policy</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="https://intercom.help/idealsignals/en/articles/5419333-terms-and-conditions">Terms
+                                & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.site-info -->
+            </div>
+            <!-- /.container -->
+        </footer>
+        <!-- /#footer -->
+    </div>
+    <!-- /#site -->
+    <!-- Dependency Scripts -->
+    <script src="dependencies/jquery/jquery.min.js"></script>
+    <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dependencies/swiper/js/swiper.min.js"></script>
+    <script src="dependencies/jquery.appear/jquery.appear.js"></script>
+    <script src="dependencies/wow/js/wow.min.js"></script>
+    <script src="dependencies/countUp.js/countUp.min.js"></script>
+    <script src="dependencies/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js"></script>
+    <script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+    <script src="dependencies/gmap3/js/gmap3.min.js"></script>
+    <script type='text/javascript'
+        src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&#038;ver=2.1.6'>
+    </script>
+    <!-- Site Scripts -->
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./script.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+.app-tabs {
+	.container-wrap  {
+		padding: 280px 0 175px;
+
+		@media(max-width: 991px) {
+			padding: 130px 0 175px;
+		}
+	}
+}
+
+.tabs-three {
+	#pix-tabs-nav {
+		text-align: left;
+		width: 300px;
+
+		@media(max-width: 991px) {
+			margin-bottom: 60px;
+
+		}
+
+		li {
+			display: block;
+			margin-right: 0;
+
+
+			a {
+				box-shadow: 0px 4px 6px 0px rgba(1, 51, 32, 0.06);
+				background: #fff;
+				color: #76747f;
+				display: block;
+				margin-bottom: 10px;
+				font-weight: 500;
+				font-size: 16px;
+
+				i {
+					margin-right: 5px;
+					vertical-align: -1px;
+				}
+			}
+
+			&.active {
+				a {
+					color: $color__theme-6;
+					box-shadow: 0px 20px 40px 0px rgba(1, 51, 32, 0.1);
+				}
+			}
+		}
+	}
+}
+
+.download-tab-content {
+	padding-top: 30px;
+	.section-title {
+		margin-bottom: 40px;
+	}
+}
+
+.tabs-content-wrapper {
+	position: relative;
+
+	.job-board-tabs-content {
+		position: relative;
+		z-index: 2;
+	}
+
+	.tab-bg-shape-wrapper {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		width: 100%;
+
+		@media(max-width: 768px) {
+			display: none;
+		}
+
+		.dot, svg {
+			position: absolute;
+		}
+
+		.dot {
+			top: -35px;
+			height: 160px;
+			width: 180px;
+			left: 160px;
+		}
+
+		svg {
+			right: -60px;
+			top: -45px;
+		}
+	}
+}
+
+.marketing {
+	padding-bottom: 120px;
+
+	@media(max-width: 991px) {
+		padding-bottom: 80px;
+	}
+}
+
+.marketing-tabs {
+	#pix-tabs-nav {
+		text-align: left;
+		margin-bottom: 30px;
+
+		li {
+			a {
+				background: transparent;
+				box-shadow: none;
+				border: 2px solid #edecf1;
+				color: #615f6b;
+				border-radius: 6px;
+
+				i {
+					margin-right: 5px;
+				}
+			}
+
+			&.active {
+				a {
+					background: $color__theme-7;
+					border-color: $color__theme-7;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.marketing-tabs-wrapper {
+	padding: 60px 100px;
+	background: #f5f6f9;
+	border-radius: 20px;
+
+	@media(max-width: 991px) {
+		padding: 50px;
+	}
+
+	.marketing-tab-contents {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		@media(max-width: 991px) {
+			display: block;
+			text-align: center;
+		}
+		
+		img {
+			background: transparent !important;
+			box-shadow: none !important;
+		}
+
+		.tab-image {
+			max-width: 355px;
+
+			@media(max-width: 991px) {
+				margin: 0 auto 40px;
+			}
+		}
+
+		.marketing-content {
+			flex: 2;
+			text-align: left;
+			padding-left: 100px;
+
+			@media(max-width: 991px) {
+				padding-left: 0;
+			}
+
+			.title {
+				font-size: 24px;
+				font-weight: 600;
+				color: #1a133b;
+				margin-bottom: 26px;
+			}
+
+			p {
+				color: #615f6b;
+			}
+		}
+
+		.feature-items {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 45px;
+			margin-top: 40px;
+			justify-content: space-between;
+
+			.feature {
+				display: flex;
+				flex-wrap: wrap;
+
+				@media( max-width: 768px ) {
+					margin-bottom: 20px;
+				}
+				.icon {
+					width: 50px;
+					margin-right: 20px;
+				}
+
+				.feature-content {
+					flex: 2;
+
+					h3 {
+						font-size: 16px;
+						line-height: 26px;
+						font-weight: 500;
+						color: #1a133b;
+					}
+				}
+				
+			}
+		}
+
+		.pix-btn {
+			border: 2px solid $color__theme-7;
+			color: $color__theme-7;
+			border-radius: 6px;
+
+			&:hover {
+				color: #fff;
+				background: $color__theme-7;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+/* Travel Tabs */
+.travel-layout {
+	padding-top: 100px;
+}
+
+#pix-tabs-content {
+	&.travel-tabs-content {
+		position: relative;
+		z-index: 33;
+
+		.content {
+			img {
+				background-color: transparent;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.tab-bg-shape-wrapper-two {
+	position: absolute;
+	left: 0;
+	top: -10px !important;
+}
+
+.layout-content {	
+	.section-title {
+		margin-bottom: 40px;
+	}
+
+	#pix-tabs-nav {	
+		.layout-box {
+			padding: 19px 25px 19px 30px;
+			border: 2px solid #f2f0f5;
+			border-radius: 10px;
+			margin-bottom: 10px;
+			text-align: left;
+			margin-right: 0;
+			transition: all 0.3s all ease-in-out;
+		
+			a {
+				padding: 0;
+				margin: 0;
+				background: transparent;
+			}
+
+			&.active, &:hover {
+				a {
+					box-shadow: none;
+				}
+			}
+
+			&.active {
+				background: #f4f2f7;
+				border-color: #f4f2f7;
+			}
+		
+			&__title {
+				font-size: 18px;
+				margin: 0;
+				font-weight: 600;
+		
+				i {
+					font-size: 20px;
+					color: #68666c;
+					margin-right: 10px;
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+		
+			&__description {
+				margin-top: 15px;
+				padding-left: 34px;
+				margin: 10px 0 0;
+			}
+		}
+
+	}
+	
+}
+
+  
+  
