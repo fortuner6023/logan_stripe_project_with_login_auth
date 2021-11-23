@@ -4,13 +4,13 @@ const path = require("path");
 const PORT = process.env.PORT || 3000;
 
 // Copy the .env.example in the root into a .env file in this folder
-const envFilePath = path.resolve(__dirname, "./.env");
-const env = require("dotenv").config({ path: envFilePath });
-if (env.error) {
-  throw new Error(
-    `Unable to load the .env file from ${envFilePath}. Please copy .env.example to ${envFilePath}`
-  );
-}
+// const envFilePath = path.resolve(__dirname, "./.env");
+// const env = require("dotenv").config({ path: envFilePath });
+// if (env.error) {
+//   throw new Error(
+//     `Unable to load the .env file from ${envFilePath}. Please copy .env.example to ${envFilePath}`
+//   );
+// }
 
 // const stripe = require("stripe")(process.env.STRIPE_TEST_SECRET_KEY);
 const stripe = require("stripe")(process.env.STRIPE_LIVE_SECRET_KEY);
