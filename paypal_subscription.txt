@@ -99,3 +99,25 @@
       }
   }).render('#paypal-button-container-P-8BD96486RW733345FMGKM6MQ'); // Renders the PayPal button
 </script>
+
+
+/////////////////////////////////////////////////////PRODUCTS:
+1. Premium membership subscription (this is what my current stripe customers are subscribed to)
+-there are 3 billing plans of this subscription. Monthly($30), Quarterly($80), & Yearly($300). Each one has a different "subscribe" button on "memberships.html"
+
+2. Flownetic indicator ($30/month)
+-file is "indicators.html"
+-have all 3 of the "Buy Now" buttons linked up to the stripe payment page for this product
+
+3. Course ($799)
+-this product is the one I spoke to you about that is not 100% complete yet
+-please make the product in stripe and setup the integration (I will send the html file for this page soon)
+
+DIRECTIONS
+
+1. When they go to any of the payment gateways for the products, please have it setup so that stripe requires an email to purchase
+2. After they purchase please have it so that the customer gets provided with a email:pass for the login page (use the email they provided to purchase)
+3. Only allow logins from customers, do not allow anyone to sign up
+
+please let me know if you have any questions regarding this
+
