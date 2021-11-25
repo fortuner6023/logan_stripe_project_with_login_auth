@@ -57,7 +57,7 @@ fetch("/setup")
     var membershipQuarterlyPriceId = json.membershipQuarterly;
     var membershipYearlyPriceId = json.membershipYearly;
   
-    // var flowneticIndicatorMonthlyPriceId = json.flowneticIndicatorMonthly;
+    var flowneticIndicatorMonthlyPriceId = json.flowneticIndicatorMonthly;
     var premiumCoursePriceId = json.premiumCourse;
 
 
@@ -67,7 +67,11 @@ fetch("/setup")
     document
       .getElementById("membership-monthly-btn")
       .addEventListener("click", function (evt) {
+      console.log('event ====>', evt);
+
         createCheckoutSession(membershipMonthlyPriceId).then(function (data) {
+        console.log('data ====>', data);
+
           // Call Stripe.js method to redirect to the new Checkout page
           stripe
             .redirectToCheckout({
@@ -80,7 +84,11 @@ fetch("/setup")
       document
       .getElementById("membership-quarterly-btn")
       .addEventListener("click", function (evt) {
+      console.log('event ====>', evt);
+
         createCheckoutSession(membershipQuarterlyPriceId).then(function (data) {
+        console.log('data ====>', data);
+
           // Call Stripe.js method to redirect to the new Checkout page
           stripe
             .redirectToCheckout({
@@ -107,18 +115,20 @@ fetch("/setup")
           // Setup event handler to create a Checkout Session when button is clicked
 
 
-    // document
-    // .getElementById("basic-yearly-plan-btn")
-    // .addEventListener("click", function (evt) {
-    //   createCheckoutSession(flowneticIndicatorMonthlyPriceId).then(function (data) {
-    //     // Call Stripe.js method to redirect to the new Checkout page
-    //     stripe
-    //       .redirectToCheckout({
-    //         sessionId: data.sessionId,
-    //       })
-    //       .then(handleResult);
-    //   });
-    // });
+    document
+    .getElementById("indicator-monthly-btn")
+    .addEventListener("click", function (evt) {
+      console.log('event ====>', evt);
+      createCheckoutSession(flowneticIndicatorMonthlyPriceId).then(function (data) {
+        console.log('data ====>', data);
+        // Call Stripe.js method to redirect to the new Checkout page
+        stripe
+          .redirectToCheckout({
+            sessionId: data.sessionId,
+          })
+          .then(handleResult);
+      });
+    });
 
 
     document
