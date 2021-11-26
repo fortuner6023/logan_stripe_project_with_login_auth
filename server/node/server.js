@@ -7,15 +7,15 @@ const User = require("./models/payment.js");
 const bodyParser = require('body-parser')
 
 // Copy the .env.example in the root into a .env file in this folder
-const envFilePath = path.resolve(__dirname, "./.env");
-const env = require("dotenv").config({
-  path: envFilePath
-});
-if (env.error) {
-  throw new Error(
-    `Unable to load the .env file from ${envFilePath}. Please copy .env.example to ${envFilePath}`
-  );
-}
+// const envFilePath = path.resolve(__dirname, "./.env");
+// const env = require("dotenv").config({
+//   path: envFilePath
+// });
+// if (env.error) {
+//   throw new Error(
+//     `Unable to load the .env file from ${envFilePath}. Please copy .env.example to ${envFilePath}`
+//   );
+// }
 
 app.use(express.urlencoded({
   extended: true
@@ -99,7 +99,7 @@ app.post("/customer-portal", (req, res) => {
         console.log('result = >', result);
         var session = await stripe.billingPortal.sessions.create({
           customer: result.customerId,
-          return_url: "http://localhost:3000"
+          return_url: `${domainURL}`
         })
   
         res.redirect(session.url)
