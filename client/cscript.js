@@ -52,10 +52,15 @@ fetch("/setup")
         var premiumCoursePriceId = json.premiumCourse;
         var stripe = Stripe(publishableKey);
 
+        console.log('premium course ===>', premiumCoursePriceId);
         document
             .getElementById("premium-course-btn")
             .addEventListener("click", function (evt) {
+                console.log('event ====>', evt);
+
                 createCheckoutSession(premiumCoursePriceId).then(function (data) {
+                    console.log('data ====>', data);
+
                     // Call Stripe.js method to redirect to the new Checkout page
                     stripe
                         .redirectToCheckout({

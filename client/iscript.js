@@ -53,7 +53,6 @@ fetch("/setup")
         var flowneticIndicatorMonthlyPriceId = json.flowneticIndicatorMonthly;
 
         var stripe = Stripe(publishableKey);
-        console.log('stripe public key', stripe);
 
         document
             .getElementById("indicator-monthly-btn")
